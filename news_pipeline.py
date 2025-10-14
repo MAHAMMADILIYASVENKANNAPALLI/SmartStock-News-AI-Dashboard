@@ -12,7 +12,7 @@ MODEL_NAME = "gemini-flash-latest"
 SUMMARY_FILE = "latest_news.json"
 
 def fetch_and_summarize():
-    NEWS_URL = f"https://newsapi.org/v2/top-headlines?category=business&language=en&apiKey={NEWS_API_KEY}"
+    NEWS_URL = f".....................................................................={NEWS_API_KEY}"
     response = requests.get(NEWS_URL)
     response.raise_for_status()
     articles = response.json().get("articles", [])[:6]
@@ -38,4 +38,5 @@ def fetch_and_summarize():
 
 if __name__ == "__main__":
     fetch_and_summarize()
+
 
