@@ -4,8 +4,8 @@ import json
 from datetime import datetime
 
 # Your API keys
-GEMINI_API_KEY = "AIzaSyBH4COoxm0QRQpMC3il4GYEDna2kVbtzG0"
-NEWS_API_KEY = "9089e4981e7e4cf084b9abaecf6b55d9"
+GEMINI_API_KEY = "your own GEMINI API KEY"
+NEWS_API_KEY = "YOUR OWN NEWS API KEY"
 
 genai.configure(api_key=GEMINI_API_KEY)
 MODEL_NAME = "gemini-flash-latest"
@@ -38,3 +38,4 @@ def fetch_and_summarize():
 
 if __name__ == "__main__":
     fetch_and_summarize()
+
