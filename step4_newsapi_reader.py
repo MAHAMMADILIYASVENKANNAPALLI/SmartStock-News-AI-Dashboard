@@ -1,8 +1,8 @@
 import requests
 
-API_KEY = "9089e4981e7e4cf084b9abaecf6b55d9"  # Replace with your key
+API_KEY = "  Replace with your key "
 
-url = f"https://newsapi.org/v2/top-headlines?category=business&language=en&apiKey={API_KEY}"
+url = f".........................................................={API_KEY}"
 response = requests.get(url)
 
 if response.status_code == 200:
@@ -18,3 +18,4 @@ if response.status_code == 200:
         print("No articles found.")
 else:
     print("⚠️ Error:", response.status_code)
+
