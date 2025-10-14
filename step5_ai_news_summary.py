@@ -2,13 +2,13 @@ import requests
 import google.generativeai as genai
 
 # Gemini API key
-API_KEY = "AIzaSyBH4COoxm0QRQpMC3il4GYEDna2kVbtzG0"  # Replace with your key
+API_KEY = " Replace with your key "
 genai.configure(api_key=API_KEY)
 
 # NewsAPI key
-NEWS_API_KEY = "9089e4981e7e4cf084b9abaecf6b55d9"  # Replace with your key
+NEWS_API_KEY = " Replace with your key "
 
-url = f"https://newsapi.org/v2/top-headlines?category=business&language=en&apiKey={NEWS_API_KEY}"
+url = f"..................................................................={NEWS_API_KEY}"
 response = requests.get(url)
 
 if response.status_code == 200:
@@ -36,3 +36,4 @@ if response.status_code == 200:
                 print("⚠️ Error generating AI summary:", e)
 else:
     print("⚠️ Failed to fetch news. Status code:", response.status_code)
+
