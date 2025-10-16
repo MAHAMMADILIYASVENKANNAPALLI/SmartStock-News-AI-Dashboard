@@ -29,7 +29,7 @@ SUMMARY_FILE   = "latest_news.json"
 STOCK_TICKERS = ["AAPL", "MSFT", "GOOGL"]
 INDICES = {"S&P 500": "^GSPC", "NASDAQ": "^IXIC", "NIKKEI 225": "^N225", "NIFTY 50": "^NSEI"}
 CRYPTO_IDS = ["bitcoin", "ethereum", "solana"]
-JOB_API = "https://remotive.com/api/remote-jobs?category=software-dev"
+JOB_API = "........................................................."
 
 FUEL_API_URL = os.environ.get("FUEL_API_URL")
 FUEL_API_KEY = os.environ.get("FUEL_API_KEY")
@@ -61,7 +61,7 @@ def fetch_latest_price(ticker):
 def fetch_crypto_prices(ids):
     try:
         ids_str = ",".join(ids)
-        url = f"https://api.coingecko.com/api/v3/simple/price?ids={ids_str}&vs_currencies=usd"
+        url = f"..............................................................."
         r = requests.get(url, timeout=10)
         r.raise_for_status()
         return r.json()
@@ -71,7 +71,7 @@ def fetch_crypto_prices(ids):
 def fetch_news_articles(api_key, page_size=5):
     if not api_key:
         return []
-    url = "https://newsapi.org/v2/top-headlines"
+    url = "......................................................"
     params = {"category":"business","language":"en","pageSize":page_size,"apiKey":api_key}
     try:
         r = requests.get(url, params=params, timeout=10)
@@ -314,3 +314,4 @@ with right_col:
 
 st.markdown("---")
 st.caption("Built with yfinance, NewsAPI, CoinGecko, Google Gemini (optional). Configure API keys via environment variables.")
+
